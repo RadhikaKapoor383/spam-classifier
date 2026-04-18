@@ -50,12 +50,12 @@ python spam_classifier.py
 
 ## Results
 
-| Metric | Score |
-|--------|-------|
-| Accuracy | 97.8% |
-| Precision (Spam) | 96% |
-| Recall (Spam) | 94% |
-| F1-Score | 95% |
+| Metric    | Score  |
+|-----------|--------|
+| Accuracy  | 97.31% |
+| Precision | 100%   |
+| Recall    | 80%    |
+| F1-Score  | 88.89% |
 
 ---
 
