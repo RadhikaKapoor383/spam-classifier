@@ -86,5 +86,7 @@ spam-classifier/
 ## Author
 
 **Radhika kapoor**
-🔗 [LinkedIn][(https://linkedin.com/in/yourprofile)](https://www.linkedin.com/in/radhika-kumari2005/)
-🐙 [GitHub][(https://github.com/yourusername)](https://github.com/RadhikaKapoor383)
+
+🔗 [LinkedIn](https://www.linkedin.com/in/radhika-kumari2005/)
+
+🐙 [GitHub](https://github.com/RadhikaKapoor383)
