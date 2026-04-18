@@ -71,6 +71,7 @@ python spam_classifier.py
 
 ## 📂 Project Structure
 
+```
 spam-classifier/
 │
 ├── spam_classifier.py
@@ -78,11 +79,12 @@ spam-classifier/
 │   └── spam.csv
 ├── confusion_matrix.png 
 └── README.md
+```
 
 ---
 
 ## Author
 
 **Radhika kapoor**
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
-🐙 [GitHub](https://github.com/yourusername)
+🔗 [LinkedIn][(https://linkedin.com/in/yourprofile)](https://www.linkedin.com/in/radhika-kumari2005/)
+🐙 [GitHub][(https://github.com/yourusername)](https://github.com/RadhikaKapoor383)
