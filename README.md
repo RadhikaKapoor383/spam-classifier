@@ -34,7 +34,7 @@ message is **spam or not spam (ham)** using NLP and Naive Bayes algorithm.
 ## How to Run
 
 **1. Clone the repo**
-git clone https://github.com/YOUR_USERNAME/spam-classifier.git
+git clone https://github.com/RadhikaKapoor383/spam-classifier.git
 cd spam-classifier
 
 **2. Install dependencies**
