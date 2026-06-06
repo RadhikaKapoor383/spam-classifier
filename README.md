@@ -12,7 +12,9 @@ This project follows a complete machine learning workflow inside a Jupyter noteb
 
 ## Demo
 
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.png)
+![Message Length Distribution](images/message_length_distribution.png)
+![Message Count](images/message_count.png)
 
 ---
 
