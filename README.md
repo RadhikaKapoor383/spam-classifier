@@ -34,9 +34,10 @@ This project follows a complete machine learning workflow inside a Jupyter noteb
 - **Name:** SMS Spam Collection Dataset
 - **Source:** [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
 - **Original Size:** 5,572 messages
+- **Current Project Dataset:** 5,592 messages after adding 20 extra sample messages
 - **Labels:** `ham` for normal messages and `spam` for unwanted messages
 
-The notebook also checks for missing values and duplicate messages. Duplicate messages are removed before model training to make the evaluation cleaner.
+The notebook also checks for missing values and duplicate messages. Duplicate messages are removed before model training to make the evaluation cleaner. This project version includes 10 additional ham examples and 10 additional spam examples for extra testing variety.
 
 ---
 
