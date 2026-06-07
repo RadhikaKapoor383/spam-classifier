@@ -6,7 +6,7 @@ A machine learning project that classifies SMS/email messages as **spam** or **h
 
 ## Live Demo
 
-[View the deployed project](https://email-spam-classifier-opbdsrjcy-radhika-kapoor-s-projects.vercel.app/)
+[View the deployed project](https://email-spam-classifier-radhika-kapoor-s-projects.vercel.app/)
 
 ---
 
