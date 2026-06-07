@@ -4,6 +4,12 @@ A machine learning project that classifies SMS/email messages as **spam** or **h
 
 ---
 
+## Live Demo
+
+[View the deployed project](https://email-spam-classifier-opbdsrjcy-radhika-kapoor-s-projects.vercel.app/)
+
+---
+
 ## Project Overview
 
 This project follows a complete machine learning workflow inside a Jupyter notebook. It starts with loading and cleaning the SMS Spam Collection Dataset, then performs exploratory data analysis, creates text-based features, preprocesses raw messages, trains a classification model, and evaluates the results using standard classification metrics.
