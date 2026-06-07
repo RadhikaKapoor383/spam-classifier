@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SpamShield — Email Classifier</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <style>
     :root[data-theme="dark"] {
       --bg: #0d0d14;
@@ -59,7 +60,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--bg);
       color: var(--text);
       height: 100vh;
@@ -122,9 +123,21 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
       box-shadow: 0 0 20px rgba(99,102,241,0.4);
       flex-shrink: 0;
+      color: #ffffff;
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2.2;
+      flex-shrink: 0;
+    }
+
+    .logo-icon .icon {
+      width: 21px;
+      height: 21px;
     }
 
     .logo-text {
@@ -141,7 +154,7 @@
     }
 
     .logo-sub {
-      font-family: 'Space Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
       color: var(--text-muted);
       letter-spacing: 1px;
@@ -159,7 +172,7 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      font-family: 'Space Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
       color: var(--ham);
       letter-spacing: 0.5px;
@@ -186,10 +199,14 @@
     }
 
     .toggle-label {
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
       color: var(--text-muted);
       letter-spacing: 0.5px;
+    }
+
+    .toggle-label .icon {
+      width: 14px;
+      height: 14px;
     }
 
     .toggle {
@@ -222,7 +239,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 9px;
+      color: #ffffff;
+    }
+
+    .toggle-thumb .icon {
+      width: 10px;
+      height: 10px;
     }
 
     .toggle input:checked ~ .toggle-thumb {
@@ -252,10 +274,18 @@
     }
 
     .welcome-icon {
-      font-size: 48px;
       margin-bottom: 16px;
-      display: block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       animation: float 3s ease-in-out infinite;
+      color: var(--accent);
+    }
+
+    .welcome-icon .icon {
+      width: 52px;
+      height: 52px;
+      stroke-width: 1.8;
     }
 
     @keyframes float {
@@ -295,7 +325,7 @@
       color: var(--text-muted);
       cursor: pointer;
       transition: all 0.2s;
-      font-family: 'Space Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     .chip:hover {
@@ -333,9 +363,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 14px;
       flex-shrink: 0;
       margin-top: 2px;
+      color: #ffffff;
     }
 
     .message.user .avatar {
@@ -345,6 +375,12 @@
     .message.bot .avatar {
       background: var(--card);
       border: 1px solid var(--border);
+      color: var(--accent);
+    }
+
+    .avatar .icon {
+      width: 16px;
+      height: 16px;
     }
 
     .bubble {
@@ -374,7 +410,7 @@
       border-radius: 16px;
       border-bottom-left-radius: 4px;
       border: 1px solid;
-      font-family: 'Space Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       animation: resultPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
     }
 
@@ -399,6 +435,14 @@
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .result-label .icon {
+      width: 20px;
+      height: 20px;
     }
 
     .result-sub {
@@ -462,7 +506,7 @@
       border: none;
       outline: none;
       resize: none;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 14px;
       color: var(--text);
       line-height: 1.5;
@@ -495,10 +539,14 @@
     .send-btn:active { transform: translateY(0); }
     .send-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
-    .send-btn svg { width: 16px; height: 16px; fill: white; }
+    .send-btn .icon {
+      width: 17px;
+      height: 17px;
+      color: #ffffff;
+    }
 
     .input-hint {
-      font-family: 'Space Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
       color: var(--text-muted);
       text-align: center;
@@ -513,7 +561,7 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <div class="logo-icon">🛡️</div>
+      <div class="logo-icon"><i data-lucide="shield-check" class="icon"></i></div>
       <div class="logo-text">
         <span class="logo-title">SpamShield</span>
         <span class="logo-sub">AI Classifier v1.0</span>
@@ -525,11 +573,11 @@
         ONLINE
       </div>
       <div class="toggle-wrap">
-        <span class="toggle-label" id="toggle-label">☀️</span>
+        <span class="toggle-label" id="toggle-label"><i data-lucide="sun" class="icon"></i></span>
         <label class="toggle">
           <input type="checkbox" id="theme-toggle" onchange="toggleTheme()"/>
           <div class="toggle-track"></div>
-          <div class="toggle-thumb" id="toggle-thumb">🌙</div>
+          <div class="toggle-thumb" id="toggle-thumb"><i data-lucide="moon" class="icon"></i></div>
         </label>
       </div>
     </div>
@@ -538,7 +586,7 @@
   <!-- Chat area -->
   <div class="chat-area" id="chat-area">
     <div class="welcome" id="welcome">
-      <span class="welcome-icon">🛡️</span>
+      <span class="welcome-icon"><i data-lucide="shield-check" class="icon"></i></span>
       <h2>Paste any message below</h2>
       <p>I'll tell you instantly whether it's spam or a legitimate message using AI.</p>
       <div class="example-chips">
@@ -560,9 +608,7 @@
         oninput="autoResize(this)"
       ></textarea>
       <button class="send-btn" id="send-btn" onclick="sendMessage()">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-        </svg>
+        <i data-lucide="send-horizontal" class="icon"></i>
       </button>
     </div>
     <div class="input-hint">Press Enter to send &nbsp;·&nbsp; Shift+Enter for new line</div>
@@ -571,13 +617,26 @@
 </div>
 
 <script>
+  function icon(name) {
+    return `<i data-lucide="${name}" class="icon"></i>`;
+  }
+
+  function renderIcons() {
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', renderIcons);
+
   // Theme toggle
   function toggleTheme() {
     const html = document.documentElement;
     const isDark = html.getAttribute('data-theme') === 'dark';
     html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    document.getElementById('toggle-thumb').textContent = isDark ? '☀️' : '🌙';
-    document.getElementById('toggle-label').textContent = isDark ? '🌙' : '☀️';
+    document.getElementById('toggle-thumb').innerHTML = isDark ? icon('sun') : icon('moon');
+    document.getElementById('toggle-label').innerHTML = isDark ? icon('moon') : icon('sun');
+    renderIcons();
   }
 
   // Auto resize textarea
@@ -613,17 +672,18 @@
 
     if (type === 'user') {
       div.innerHTML = `
-        <div class="avatar">👤</div>
+        <div class="avatar">${icon('user-round')}</div>
         <div class="bubble">${escapeHTML(text)}</div>
       `;
     } else {
       div.innerHTML = `
-        <div class="avatar">🛡️</div>
+        <div class="avatar">${icon('shield-check')}</div>
         <div class="bubble">${text}</div>
       `;
     }
 
     chat.appendChild(div);
+    renderIcons();
     chat.scrollTop = chat.scrollHeight;
     return div;
   }
@@ -638,7 +698,7 @@
     div.className = 'message bot';
     div.id = 'typing-indicator';
     div.innerHTML = `
-      <div class="avatar">🛡️</div>
+      <div class="avatar">${icon('shield-check')}</div>
       <div class="bubble">
         <div class="typing">
           <span></span><span></span><span></span>
@@ -646,6 +706,7 @@
       </div>
     `;
     chat.appendChild(div);
+    renderIcons();
     chat.scrollTop = chat.scrollHeight;
   }
 
@@ -658,18 +719,21 @@
   // Add result bubble
   function addResult(resultText) {
     const chat = document.getElementById('chat-area');
-    const isSpam = resultText.includes('Spam!') && resultText.includes('🚨');
+    const normalized = resultText.toLowerCase();
+    const isSpam = normalized.includes('spam') && !normalized.includes('not spam');
+    const label = isSpam ? 'Spam detected' : 'Not spam';
 
     const div = document.createElement('div');
     div.className = 'message bot';
     div.innerHTML = `
-      <div class="avatar">🛡️</div>
+      <div class="avatar">${icon('shield-check')}</div>
       <div class="result-bubble ${isSpam ? 'spam' : 'ham'}">
-        <div class="result-label">${resultText}</div>
+        <div class="result-label">${icon(isSpam ? 'octagon-alert' : 'circle-check')} ${label}</div>
         <div class="result-sub">${isSpam ? 'THIS MESSAGE IS LIKELY SPAM' : 'THIS MESSAGE LOOKS SAFE'}</div>
       </div>
     `;
     chat.appendChild(div);
+    renderIcons();
     chat.scrollTop = chat.scrollHeight;
   }
 
@@ -709,7 +773,7 @@
 
     } catch (err) {
       removeTyping();
-      addMessage('⚠️ Could not connect to the server. Make sure Flask is running!', 'bot');
+      addMessage(`${icon('triangle-alert')} Could not connect to the server. Make sure Flask is running!`, 'bot');
     }
 
     btn.disabled = false;
