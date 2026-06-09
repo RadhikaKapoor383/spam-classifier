@@ -164,11 +164,18 @@ Note: After the latest EDA, duplicate removal, and text preprocessing updates, r
 ```text
 spam-classifier/
 |
-|-- spam_classifier.ipynb
-|-- confusion_matrix.png
-|-- README.md
-`-- spam-classifier dataset/
-    `-- spam.csv
+|-- spam_classifier.ipynb          # Main Jupyter notebook with ML workflow
+|-- app.py                         # Flask web application
+|-- README.md                      # Project documentation
+|-- requirements.txt               # Python dependencies
+|-- Procfile                       # Deployment configuration
+|-- vercel.json                    # Vercel deployment settings
+|-- images/                        # Visualizations (confusion matrix, etc.)
+|-- models/                        # Trained model files
+|-- templates/                     # Flask HTML templates
+|-- spam-classifier dataset/       # Dataset folder
+|   `-- spam.csv                   # SMS Spam Collection Dataset
+`-- .git/                          # Git repository
 ```
 
 ---
